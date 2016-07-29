@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/activity_chat.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/activity_chat.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/layout_chat_tool.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/layout_chat_tool.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/row_send_image.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_send_image.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/row_send_voice.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_send_voice.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/row_send_message.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_send_message.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/row_recive_message.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_recive_message.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/activity_userlist.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/activity_userlist.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/row_recive_voice.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_recive_voice.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/release/layout/row_recive_image.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_recive_image.xml"
+    }
+]
