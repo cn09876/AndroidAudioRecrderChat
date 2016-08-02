@@ -6,5 +6,9 @@
     {
         "merged": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/anim/video_frame.xml",
         "source": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/src/main/res/anim/video_frame.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/anim/video_frame.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/anim/video_frame.xml"
     }
 ]

@@ -4,6 +4,10 @@
         "source": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/src/main/res/menu/main.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/menu/main.xml"
+    },
+    {
         "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/menu/main.xml"
     }

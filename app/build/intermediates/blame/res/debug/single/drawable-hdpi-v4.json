@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
         "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
