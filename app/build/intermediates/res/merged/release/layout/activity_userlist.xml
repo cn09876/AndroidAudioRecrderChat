@@ -9,11 +9,17 @@
         android:layout_height="wrap_content"
         android:onClick="onClick1"
         android:text="user1" />
-    
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick2"
         android:text="user2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="user3" />
 
 </LinearLayout>
