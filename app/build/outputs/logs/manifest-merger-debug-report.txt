@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml
@@ -26,50 +26,54 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioPr
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:8:9-35
 		INJECTED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:11:5-86
+	android:name
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:11:22-83
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:11:5-81
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:11:22-78
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:12:5-71
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:13:5-71
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:12:22-68
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:13:22-68
 uses-permission#android.permission.INTERNET
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:13:5-66
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:14:5-66
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:13:22-64
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:14:22-64
 application
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:15:5-32:19
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:16:5-33:19
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:19:9-41
 	android:allowBackup
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:17:9-45
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:18:9-45
 	android:theme
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:20:9-40
 activity#com.dasudian.chat.UserListActivity
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:20:9-25:20
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:21:9-26:20
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:20:19-51
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:21:19-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:21:13-24:29
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:22:13-25:29
 action#android.intent.action.MAIN
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:24:27-74
 activity#com.dasudian.chat.ChatActivity
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:26:9-29:20
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:27:9-30:20
 	android:label
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:28:13-45
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:29:13-45
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:27:13-41
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:28:13-41
 activity#com.dasudian.chat.AudioRecordTest
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:30:9-31:20
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:31:9-32:20
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:30:19-50
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:31:19-50

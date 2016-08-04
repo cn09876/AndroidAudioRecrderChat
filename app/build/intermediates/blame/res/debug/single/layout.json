@@ -28,12 +28,12 @@
         "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_send_voice.xml"
     },
     {
-        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/debug/layout/row_send_message.xml",
-        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_send_message.xml"
-    },
-    {
         "merged": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/layout_chat_tool.xml",
         "source": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/src/main/res/layout/layout_chat_tool.xml"
+    },
+    {
+        "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/debug/layout/row_send_message.xml",
+        "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_send_message.xml"
     },
     {
         "merged": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/row_recive_voice.xml",

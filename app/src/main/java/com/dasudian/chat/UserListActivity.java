@@ -1,12 +1,19 @@
 package com.dasudian.chat;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+
+import com.dasudian.utils.EventUdpData;
 import com.dasudian.utils.SwHttp;
+import com.dasudian.utils.UdpHelper;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.BinaryHttpResponseHandler;
@@ -18,20 +25,63 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import cz.msebera.android.httpclient.ExceptionLogger;
 import cz.msebera.android.httpclient.Header;
+import de.greenrobot.event.EventBus;
 
 
 public class UserListActivity extends Activity {
 
-	@Override
+    String ip="",ssSend="";
+    int iSendCount=0,iRecvCount=0;
+    Button btn4;
+
+    void l(String s)
+    {
+        Log.e("xxx",s);
+    }
+
+    public void onEventMainThread(Msg1 x)
+    {
+        btn4.setText(iSendCount+"/"+iRecvCount);
+    }
+
+    public void onEventMainThread(EventUdpData u)
+    {
+        l(u.FromIP+"="+u.data.length()+"bytes");
+        if(u.data.indexOf("discover")>0)ip=u.FromIP;
+
+        if(u.data.indexOf("<aa>")>0 && u.data.indexOf("</aa>")>0)
+        {
+            iRecvCount++;
+        }
+
+        if(u.jsonArr!=null)
+        {
+            l(u.jsonArr.toString());
+        }
+    }
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState)
     {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_userlist);
+        EventBus.getDefault().register(this);
+
+        btn4=(Button)findViewById(R.id.btn4);
+        ssSend="<start>";
+        for(int i=1;i<=100;i++)ssSend+="888888888888";
+        ssSend+="</start>";
+
+        WifiManager wm=(WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        new Thread(new UdpHelper(wm)).start();
 
         RequestParams params=new RequestParams();
         params.add("aaa","bbb");
@@ -101,6 +151,46 @@ public class UserListActivity extends Activity {
 		intent.putExtra("name", "user1");
 		startActivity(intent);
 	}
+
+    String genSendInfo()
+    {
+        String ret="";
+        List<Map<String,String>> arr=new ArrayList<>();
+        Map<String,String> m=new HashMap<>();
+        m.put("RecordCount","78");
+        m.put("Auth","默认认证方式3A");
+        arr.add(m);
+        for(int i=1;i<=10;i++)
+        {
+            Map<String,String> m1=new HashMap<>();
+            m1.put("id","No."+i);
+            m1.put("name","姓名"+i);
+            arr.add(m1);
+        }
+        Gson g=new Gson();
+        ret=g.toJson(arr);
+
+        return "<json>"+ret+"</json>";
+    }
+
+    public void  onClick4(View v)
+    {
+        iSendCount++;
+        UdpHelper.send(genSendInfo(),ip);
+
+        if(false) {
+            Timer t = new Timer();
+            t.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    iSendCount++;
+                    EventBus.getDefault().post(new Msg1());
+                    UdpHelper.send(ssSend, ip);
+                }
+            }, 100, 100);
+        }
+
+    }
 
     public void onClick3(View view)
     {
@@ -186,4 +276,11 @@ public class UserListActivity extends Activity {
             }
         });
 	}
+
 }
+
+class Msg1
+{
+
+}
+
