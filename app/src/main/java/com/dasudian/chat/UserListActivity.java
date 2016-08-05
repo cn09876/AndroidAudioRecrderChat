@@ -10,12 +10,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.dasudian.utils.EventUdpData;
+import com.dasudian.utils.SwCheck1;
 import com.dasudian.utils.SwHttp;
 import com.dasudian.utils.UdpHelper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.Base64;
 import com.loopj.android.http.BinaryHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.loopj.android.http.TextHttpResponseHandler;
@@ -23,21 +25,19 @@ import com.loopj.android.http.TextHttpResponseHandler;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import cz.msebera.android.httpclient.ExceptionLogger;
 import cz.msebera.android.httpclient.Header;
 import de.greenrobot.event.EventBus;
 
 
 public class UserListActivity extends Activity {
 
+    @SwCheck1(value = 1,txt="")
     String ip="",ssSend="";
     int iSendCount=0,iRecvCount=0;
     Button btn4;
@@ -57,13 +57,9 @@ public class UserListActivity extends Activity {
         l(u.FromIP+"="+u.data.length()+"bytes");
         if(u.data.indexOf("discover")>0)ip=u.FromIP;
 
-        if(u.data.indexOf("<aa>")>0 && u.data.indexOf("</aa>")>0)
-        {
-            iRecvCount++;
-        }
-
         if(u.jsonArr!=null)
         {
+            iRecvCount++;
             l(u.jsonArr.toString());
         }
     }
@@ -74,6 +70,7 @@ public class UserListActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_userlist);
         EventBus.getDefault().register(this);
+
 
         btn4=(Button)findViewById(R.id.btn4);
         ssSend="<start>";
@@ -154,43 +151,52 @@ public class UserListActivity extends Activity {
 
     String genSendInfo()
     {
+
         String ret="";
         List<Map<String,String>> arr=new ArrayList<>();
         Map<String,String> m=new HashMap<>();
-        m.put("RecordCount","78");
+        m.put("RecordCount","101");
         m.put("Auth","默认认证方式3A");
         arr.add(m);
         for(int i=1;i<=10;i++)
         {
             Map<String,String> m1=new HashMap<>();
             m1.put("id","No."+i);
-            m1.put("name","姓名"+i);
+            m1.put("name","姓名"+i+"忐忑喆**&^/'");
             arr.add(m1);
         }
-        Gson g=new Gson();
+        Gson g=new GsonBuilder().disableHtmlEscaping().create();
         ret=g.toJson(arr);
+
+        ret=toBase64(ret);
 
         return "<json>"+ret+"</json>";
     }
 
     public void  onClick4(View v)
     {
-        iSendCount++;
-        UdpHelper.send(genSendInfo(),ip);
+        //iSendCount++;
+        //UdpHelper.send(genSendInfo(),ip);
 
-        if(false) {
+        if(true) {
             Timer t = new Timer();
             t.schedule(new TimerTask() {
                 @Override
                 public void run() {
                     iSendCount++;
                     EventBus.getDefault().post(new Msg1());
-                    UdpHelper.send(ssSend, ip);
+                    UdpHelper.send(genSendInfo(), ip);
                 }
             }, 100, 100);
         }
 
     }
+
+    String toBase64(String s)
+    {
+        return Base64.encodeToString(s.getBytes(), Base64.NO_WRAP);
+    }
+
 
     public void onClick3(View view)
     {

@@ -28,14 +28,13 @@ public class UdpHelper implements Runnable
         // UDP服务器监听的端口
         Integer port = 20423;
         // 接收的字节大小，客户端发送的数据不能超过这个大小
-        byte[] message = new byte[65535];
+
 
         try
         {
             // 建立Socket连接
             DatagramSocket datagramSocket = new DatagramSocket(port);
             datagramSocket.setBroadcast(true);
-            DatagramPacket datagramPacket = new DatagramPacket(message, message.length);
             try
             {
                 while (!IsThreadDisable)
@@ -43,6 +42,8 @@ public class UdpHelper implements Runnable
                     // 准备接收数据
                     Log.e("UDP.Reving", "准备接受");
                     this.lock.acquire();
+                    byte[] message = new byte[65535];
+                    DatagramPacket datagramPacket = new DatagramPacket(message, message.length);
                     datagramSocket.receive(datagramPacket);
                     String strMsg = new String(datagramPacket.getData()).trim();
                     String PeerIP=datagramPacket.getAddress().getHostAddress().toString();
@@ -69,11 +70,13 @@ public class UdpHelper implements Runnable
                     @Override
                     public void run() {
                         int server_port = 20420;
-                        Log.e("UDP Demo", "UDP.Send("+ip+"): "+message.length()+"bytes "+message);
+                        Log.e("UDP Demo", "UDP.Send("+ip+"): "+message.length()+"bytes ");
                         DatagramSocket s = null;
-                        try {
+                        try
+                        {
                             s = new DatagramSocket();
-                        } catch (Exception e) {
+                        }
+                        catch (Exception e) {
                             Log.e("UDP Demo","初始化udp socker error");
                             return;
                         }

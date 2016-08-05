@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs,json,StdCtrls, IdBaseComponent, IdComponent, IdUDPBase,
-  IdUDPServer, ExtCtrls,idglobal,IdSocketHandle;
+  IdUDPServer, ExtCtrls,idglobal,IdSocketHandle,encddecd;
 
 type
   TForm1 = class(TForm)
@@ -36,6 +36,15 @@ var
 implementation
 
 {$R *.dfm}
+function toBase64(s:string):string;
+begin
+  result:=EncodeString(s);
+end;
+
+function fromBase64(s:string):string;
+begin
+  result:=DecodeString(s);
+end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
@@ -43,15 +52,12 @@ var
   i:integer;
   aa:TSuperArray;
 begin
-  if false then
-  begin
-    a:=so();
-    a.S['name']:='sunwaywei';
-    a.S['sex']:='boy1';
-    a.o['items']:=so('[]');
-    for i:=1 to 10 do
-      a.A['items'].Add(so('{"id":'+inttostr(i)+',"name":"IT'+inttostr(i)+'"}'));
-  end;
+  a:=so();
+  a.S['name']:='sunwaywei';
+  a.S['sex']:='boy1';
+  a.o['items']:=so('[]');
+  for i:=1 to 10 do
+    a.A['items'].Add(so('{"id":'+inttostr(i)+',"name":"IT'+inttostr(i)+'"}'));
 
   
 
@@ -172,6 +178,20 @@ WideCharToMultiByte(codePage,WC_COMPOSITECHECK or WC_DISCARDNS or WC_SEPCHARS or
 end;
 end;
 
+function UTF8ToWide(const US: ansistring): WideString;
+var
+  len: integer;
+  ws: WideString;
+begin
+  Result:='';
+  if (Length(US) = 0) then
+    exit;
+  len:=MultiByteToWideChar(CP_UTF8, 0, PChar(US), -1, nil, 0);
+  SetLength(ws, len);
+  MultiByteToWideChar(CP_UTF8, 0, PChar(US), -1, PWideChar(ws), len);
+  Result:=ws;
+end;
+
 procedure TForm1.uUDPRead(Sender: TObject; AData: TBytes;
   ABinding: TIdSocketHandle);
 var
@@ -183,16 +203,15 @@ var
   cnt:integer;
   jsonStr:string;
   ret:string;
+  jsonDecodeBase64:string;
 begin
   //
   a:=so('[]');
-
-
   b:=so();
   b.I['RecordCount']:=123;
   b.S['AuthKey']:='ίχίχ123';
   a.AsArray.Add(b);
-  for i:=1 to 123 do
+  for i:=1 to 5 do
   begin
     b.Clear(true);
     b.I['id']:=i;
@@ -205,12 +224,14 @@ begin
   fromIP:=aBinding.PeerIP;
   fromPort:=aBinding.PeerPort;
   dt:=bytestostring(adata);
-  dt:=UTF8ToAnsiString(dt,936);
+  //dt:=UTF8ToAnsiString(dt,936);
   jsonStr:=getPart(dt,'<json>','</json>');
-  ret:=self.parserJson(jsonStr);
-  
+  jsonDecodeBase64:=fromBase64(jsonStr);
+  jsonDecodeBase64:=utf8towide(jsonDecodeBase64);
+  ret:=self.parserJson(jsonDecodeBase64);
+
   l(fromIP+':'+inttostr(fromPort)+'='+inttostr(length(adata))+'bytes ');
-  u.Send(fromIP,20423,'++<json>'+a.AsJSon()+'</json>');
+  u.Send(fromIP,20423,'++<json>'+toBase64(a.AsJSon())+'</json>');
   self.Button2.Caption:=inttostr(iRecvCount);
 end;
 

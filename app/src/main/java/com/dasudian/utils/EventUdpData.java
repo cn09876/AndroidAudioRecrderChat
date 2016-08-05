@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.loopj.android.http.Base64;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +44,11 @@ public class EventUdpData
         return ret;
     }
 
+    String fromBase64(String s)
+    {
+        return new String(Base64.decode(s.getBytes(), Base64.DEFAULT));
+    }
+
 
     public EventUdpData(String PeerIP,String data_)
     {
@@ -54,8 +60,10 @@ public class EventUdpData
         String jsonData=getPart(data,"<json>","</json>");
         try
         {
-            Log.e("udp","udp.recv.json="+jsonData);
-            jsonArr = g.fromJson(jsonData, new TypeToken<ArrayList<Map<String, String>>>() {
+            //Log.e("udp",jsonData);
+            String jsonDecodeBase64=fromBase64(jsonData);
+            //Log.e("udp","udp.recv.json="+jsonDecodeBase64);
+            jsonArr = g.fromJson(jsonDecodeBase64, new TypeToken<ArrayList<Map<String, String>>>() {
             }.getType());
         }
         catch (Exception e)
