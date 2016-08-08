@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.dasudian.chat;
+package com.words.chat;
 
 public final class BuildConfig {
   public static final boolean DEBUG = false;

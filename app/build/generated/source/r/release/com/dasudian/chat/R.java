@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.dasudian.chat;
+package com.words.chat;
 
 public final class R {
     public static final class anim {
