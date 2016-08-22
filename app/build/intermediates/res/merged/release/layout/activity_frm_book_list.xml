@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    android:fillViewport="true"
+    >
+
+<LinearLayout
+    android:id="@+id/activity_frm_book_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <sw.ui.SwListView
+        android:id="@+id/lstBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </sw.ui.SwListView>
+
+    <Button
+        android:text="刷新"
+        android:id="@+id/reload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</ScrollView>
+

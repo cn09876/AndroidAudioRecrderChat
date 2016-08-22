@@ -5,12 +5,14 @@ import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTabHost;
 import android.text.Html;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -27,6 +29,7 @@ import java.net.URLEncoder;
 import cz.msebera.android.httpclient.Header;
 import sw.ui.SwListView;
 
+import static com.words.utils.Tools.cint;
 import static com.words.utils.Tools.getPart;
 
 public class frmWordList extends SwForm
@@ -86,10 +89,9 @@ public class frmWordList extends SwForm
                 }
                 final TWords b=(TWords) lstWords.get(position);
                 TextView txt1=(TextView)convertView.findViewById(R.id.txt1);
-                convertView.findViewById(R.id.btnPlay).setOnClickListener(new View.OnClickListener() {
+                txt1.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view)
-                    {
+                    public void onClick(View view) {
                         play(b.txt,b.id);
                     }
                 });
@@ -109,23 +111,25 @@ public class frmWordList extends SwForm
 
     void play(final String txt,final String id)
     {
-        if(FileExists("/sdcard/word_sound/"+id+".mp3"))
+        final String id_=""+cint(id);
+        l("txt="+txt+",id="+id+",id_="+id_);
+        if(FileExists("/sdcard/word_sound/"+id_+".mp3"))
         {
-            playmp3("/sdcard/word_sound/"+id+".mp3");
+            playmp3("/sdcard/word_sound/"+id_+".mp3");
         }
         else
         {
-            final String ff="http://jy.dalianit.com/word_sound/"+id+".mp3";
+            final String ff="http://jy.dalianit.com/word_sound/"+id_+".mp3";
             SwHttp.get(ff, null, new AsyncHttpResponseHandler() {
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                    bytes2file(responseBody,"/sdcard/word_sound/"+id+".mp3");
-                    playmp3("/sdcard/word_sound/"+id+".mp3");
+                    bytes2file(responseBody,"/sdcard/word_sound/"+id_+".mp3");
+                    playmp3("/sdcard/word_sound/"+id_+".mp3");
                 }
 
                 @Override
                 public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                    //toast("声音文件下载失败 "+statusCode+" "+ff);
+                    toast("声音文件下载失败 "+statusCode+" "+ff);
                     app.speak(txt);
                 }
             });
@@ -190,6 +194,7 @@ public class frmWordList extends SwForm
                 }
                 l("共"+lstWords.count()+"个记录");
                 lstWords.reload();
+
             }
         });
     }

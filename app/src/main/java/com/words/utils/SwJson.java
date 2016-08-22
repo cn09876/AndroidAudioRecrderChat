@@ -3,6 +3,8 @@ package com.words.utils;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.internal.ObjectConstructor;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
@@ -24,9 +26,10 @@ public class SwJson
         {
             return m.get(k);
         }
-        public void set(String k,String v)
+        public SwDataRow set(String k,String v)
         {
             m.put(k,v);
+            return this;
         }
     }
 
@@ -35,6 +38,13 @@ public class SwJson
         public int RecordCount=0;
         public String TableName="";
         public List<SwDataRow> rows=new ArrayList<>();
+
+        public SwDataRow add()
+        {
+            SwDataRow r=new SwDataRow();
+            rows.add(r);
+            return r;
+        }
     }
 
     Map<String,Object> arr=new HashMap<String, Object>();
@@ -43,6 +53,53 @@ public class SwJson
     {
         return new SwJson(s);
     }
+
+    public String toJsonWithEncode()
+    {
+        return toJson();
+    }
+
+    public String toJson()
+    {
+        Map<String,Object> jjObj=new HashMap<String,Object>();
+        Iterator iter = arr.entrySet().iterator();
+        while (iter.hasNext())
+        {
+            Map.Entry entry = (Map.Entry) iter.next();
+            String key = entry.getKey().toString();
+            Object val = entry.getValue();
+            if(val.getClass()==SwDataTable.class)
+            {
+                SwDataTable dt=(SwDataTable)val;
+                List<Map<String,String>> ds=new ArrayList<Map<String,String>>();
+                for(SwDataRow r:dt.rows)
+                {
+                    ds.add(r.m);
+                }
+                jjObj.put(key,ds);
+            }
+            else
+            {
+                jjObj.put(key,val);
+            }
+        }
+
+        String ret="";
+        jjObj.put("tim",System.currentTimeMillis());
+        Gson g=new GsonBuilder().disableHtmlEscaping().create();
+        ret=g.toJson(jjObj);
+        return ret;
+    }
+
+    public Map<String,Object> add()
+    {
+        if(!arr.containsKey("rows"))arr.put("rows",new ArrayList<Map<String,Object>>());
+        List<Map<String,Object>> rs=(List<Map<String,Object>>)arr.get("rows");
+        Map<String,Object> r=new HashMap<String,Object>();
+        rs.add(r);
+        return r;
+    }
+
 
     void l(String s)
     {
@@ -81,32 +138,42 @@ public class SwJson
 
         try
         {
-            lst=(ArrayList<Map<String,Object>>)arr.get(k);
-            dt.RecordCount=lst.size();
-            for (Map<String,Object> m:lst)
+            if(arr.get(k).getClass()==ArrayList.class)
             {
-                SwDataRow dr=new SwDataRow();
-                Iterator iter = m.entrySet().iterator();
-                while (iter.hasNext())
-                {
-                    Map.Entry entry = (Map.Entry) iter.next();
-                    Object key = entry.getKey();
-                    Object val = entry.getValue();
-                    dr.set(key.toString(),val.toString());
+                lst = (ArrayList<Map<String, Object>>) arr.get(k);
+                dt.RecordCount = lst.size();
+                for (Map<String, Object> m : lst) {
+                    SwDataRow dr = new SwDataRow();
+                    Iterator iter = m.entrySet().iterator();
+                    while (iter.hasNext()) {
+                        Map.Entry entry = (Map.Entry) iter.next();
+                        Object key = entry.getKey();
+                        Object val = entry.getValue();
+                        dr.set(key.toString(), val.toString());
+                    }
+                    dt.rows.add(dr);
                 }
-                dt.rows.add(dr);
+                arr.put(k, dt);
+            }
+            else
+            {
+                return (SwDataTable) arr.get(k);
             }
         }
         catch (Exception e)
         {
-
+            arr.put(k,dt);
         }
         return dt;
     }
 
 
+    public SwJson(){}
+
     public SwJson(String s)
     {
+        if(s==null)return;
+        if(s.equals(""))return;
         Gson g=new Gson();
         if(s.indexOf("<!--START JSON-->")>=0 && s.indexOf("<!--END JSON-->")>10)
         {

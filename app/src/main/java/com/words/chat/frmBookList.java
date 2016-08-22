@@ -46,6 +46,7 @@ public class frmBookList extends SwForm
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frm_book_list);
         lstBooks=(SwListView)findViewById(R.id.lstBooks);
@@ -110,6 +111,7 @@ public class frmBookList extends SwForm
 
                 for(SwJson.SwDataRow dr:x.table().rows)
                 {
+                    l(dr.toString());
                     TBooks b=new TBooks();
                     b.img="http://jy.dalianit.com/api_v1/111.jpg";
                     b.id=dr.get("id").toString();

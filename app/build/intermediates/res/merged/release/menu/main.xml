@@ -1,11 +1,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.dasudian.chat.MainActivity" >
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_copy"
+        android:icon="@drawable/mywork_selected"
+        android:showAsAction="ifRoom"
+        android:title="复制"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_cut"
+        android:icon="@drawable/voicesearch_feedback005"
+        android:showAsAction="ifRoom"
+        android:title="剪切"/>
+    <item
+        android:id="@+id/action_discard"
+        android:showAsAction="never"
+        android:icon="@drawable/nursingcareplan2"
+        android:title="删除"/>
+    <item
+        android:id="@+id/action_edit"
+        android:showAsAction="never"
+        android:icon="@drawable/chatto_voice_playing_f2"
+        android:title="编辑"
+        tools:ignore="AppCompatResource" />
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:id="@+id/action_email"
+        android:icon="@drawable/chat_send"
+        android:showAsAction="always"
+        android:title="邮箱"/>
 
 </menu>

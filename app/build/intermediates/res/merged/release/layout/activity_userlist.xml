@@ -22,4 +22,11 @@
         android:onClick="onClick3"
         android:text="user3" />
 
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick4"
+        android:text="UDP Test" />
+
 </LinearLayout>

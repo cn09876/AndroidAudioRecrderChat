@@ -79,9 +79,6 @@ public class frmLessionList extends SwForm
                 }
                 final TLession b=(TLession) lstLessions.get(position);
 
-
-
-
                 CheckBox cb1=(CheckBox)convertView.findViewById(R.id.chk1);
                 try
                 {

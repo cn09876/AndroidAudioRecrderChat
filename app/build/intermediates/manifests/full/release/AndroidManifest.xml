@@ -8,28 +8,40 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="21" />
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name="com.words.utils.Appl"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.dasudian.chat.UserListActivity" >
+        <activity android:name="com.words.chat.UserListActivity" />
+        <activity
+            android:name="com.words.chat.ChatActivity"
+            android:label="@string/app_name" />
+        <activity android:name="com.words.chat.AudioRecordTest" />
+        <activity android:name="com.words.chat.frmBookList" />
+        <activity android:name="com.words.chat.frmLessionList" />
+        <activity
+            android:name="com.words.chat.frmWordList"
+            android:label="@string/title_activity_frm_word_list" />
+        <activity android:name="com.words.chat.frmText" >
+        </activity>
+        <activity
+            android:name="com.words.chat.ScrollingActivity"
+            android:label="@string/title_activity_scrolling" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.dasudian.chat.ChatActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity android:name="com.dasudian.chat.AudioRecordTest" >
         </activity>
     </application>
 

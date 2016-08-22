@@ -12,6 +12,10 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/message_fragment.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/message_fragment.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
     },
@@ -68,6 +72,10 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/activity_frm_lession_list.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/home_fragment.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/home_fragment.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/lay_books_item.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/lay_books_item.xml"
     },
@@ -78,6 +86,10 @@
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
@@ -108,8 +120,16 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/lay_test.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/lay_test.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/tab_item.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/tab_item.xml"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/row_recive_message.xml",
@@ -148,6 +168,10 @@
         "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/activity_chat.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/content_item.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/content_item.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
     },
@@ -168,6 +192,10 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/activity_frm_word_list.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/activity_nav_test.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/activity_nav_test.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
     },
@@ -182,6 +210,10 @@
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/report_fragment.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/report_fragment.xml"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
@@ -210,6 +242,10 @@
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/activity_frm_text.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/activity_frm_text.xml"
     },
     {
         "merged": "/Users/cn09876/Desktop/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/row_recive_voice.xml",
@@ -252,6 +288,10 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/activity_scrolling.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/activity_scrolling.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
@@ -270,6 +310,14 @@
     {
         "merged": "/Users/cn09876/Desktop/YyChat1/app/build/intermediates/res/merged/debug/layout/row_recive_voice.xml",
         "source": "/Users/cn09876/Desktop/YyChat1/app/src/main/res/layout/row_recive_voice.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/content_main.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/mine_fragment.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/layout/mine_fragment.xml"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",

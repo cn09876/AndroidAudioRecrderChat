@@ -169,7 +169,6 @@ public class Tools
 			Log.e("xxx","i1="+i1+",i2="+i2);
 			if(i1<0)return  "";
 			if (i2<0)return "";
-			Log.e("xxx","a="+(i1+b.length())+",b="+(i2-i1));
 			ret=a.substring(i1+b.length(), i2);
 			return ret;
 		}

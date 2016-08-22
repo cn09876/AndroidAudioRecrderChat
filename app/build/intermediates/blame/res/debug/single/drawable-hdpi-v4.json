@@ -12,8 +12,20 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/personal_selected.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/personal_selected.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_counter_gray.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_counter_gray.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_report.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_report.xml"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
@@ -32,12 +44,24 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_title_color.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_title_color.xml"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mywork_selected.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/mywork_selected.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_counter_light.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_counter_light.png"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -56,6 +80,10 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_assistant_gray.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_assistant_gray.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png"
     },
@@ -72,12 +100,24 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_center_gray.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_center_gray.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_assistant_light.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_assistant_light.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_contest_light.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_contest_light.png"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
@@ -160,8 +200,16 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/infusion_selected.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/infusion_selected.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_message.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_message.xml"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
@@ -180,6 +228,10 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/doctoradvice2.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/doctoradvice2.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
@@ -188,8 +240,20 @@
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mypatient_selected.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/mypatient_selected.png"
+    },
+    {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/nursingcareplan2.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/nursingcareplan2.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_contest_gray.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_contest_gray.png"
     },
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png",
@@ -198,5 +262,17 @@
     {
         "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png",
         "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_home.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_home.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_mine.xml",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_mine.xml"
+    },
+    {
+        "merged": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tab_center_light.png",
+        "source": "/Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/res/drawable-hdpi/tab_center_light.png"
     }
 ]

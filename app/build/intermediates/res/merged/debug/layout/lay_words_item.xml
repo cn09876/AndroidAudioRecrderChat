@@ -13,12 +13,6 @@
         android:layout_height="match_parent"
         />
     <Button
-        android:id="@+id/btnPlay"
-        android:text="播"
-        android:layout_width="0dp"
-        android:layout_weight="15"
-        android:layout_height="wrap_content" />
-    <Button
         android:id="@+id/btnRec"
         android:text="录"
         android:layout_width="0dp"

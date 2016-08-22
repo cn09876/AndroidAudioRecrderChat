@@ -27,17 +27,22 @@
             android:name="com.words.chat.ChatActivity"
             android:label="@string/app_name" />
         <activity android:name="com.words.chat.AudioRecordTest" />
-        <activity android:name="com.words.chat.frmBookList" >
+        <activity android:name="com.words.chat.frmBookList" />
+        <activity android:name="com.words.chat.frmLessionList" />
+        <activity
+            android:name="com.words.chat.frmWordList"
+            android:label="@string/title_activity_frm_word_list" />
+        <activity android:name="com.words.chat.frmText" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.words.chat.frmLessionList" />
         <activity
-            android:name="com.words.chat.frmWordList"
-            android:label="@string/title_activity_frm_word_list" />
+            android:name="com.words.chat.ScrollingActivity"
+            android:label="@string/title_activity_scrolling" >
+        </activity>
     </application>
 
 </manifest>

@@ -27,6 +27,7 @@ public class SwListView extends ListView {
 	private Context ctx;
 	private ArrayList<Object> lst=new ArrayList<Object>();
     private LayoutInflater layoutInflater = null;
+	MyAdapter mad=null;
 
 
 	@SuppressWarnings("unused")
@@ -63,9 +64,21 @@ public class SwListView extends ListView {
 
     public void reload()
     {
+		/*
         this.setAdapter(null);
         MyAdapter mad=new MyAdapter(ctx,lst);
         this.setAdapter(mad);
+        */
+		if(mad==null)
+		{
+			this.setAdapter(null);
+			mad=new MyAdapter(ctx,lst);
+			this.setAdapter(mad);
+		}
+		else
+		{
+			mad.notifyDataSetChanged();
+		}
     }
 
     public void init()

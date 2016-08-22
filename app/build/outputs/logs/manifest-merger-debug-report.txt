@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:3:5-29
 		INJECTED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml
@@ -36,6 +36,15 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/An
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.cjj.materialrefeshlayout:library:1.3.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.cjj.materialrefeshlayout/library/1.3.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
@@ -76,7 +85,7 @@ ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/ma
 	android:name
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:17:22-77
 application
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:19:5-41:19
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:19:5-47:19
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha1] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha1/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
@@ -88,6 +97,14 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/An
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:23:9-41
@@ -114,26 +131,36 @@ ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/ma
 	android:name
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:29:19-50
 activity#com.words.chat.frmBookList
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:30:9-36:20
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:30:9-58
 	android:name
 		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:30:19-46
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:31:13-35:29
-action#android.intent.action.MAIN
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:32:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:34:17-77
-	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:34:27-74
 activity#com.words.chat.frmLessionList
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:37:9-52
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:31:9-52
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:37:19-49
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:31:19-49
 activity#com.words.chat.frmWordList
-ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:38:9-40:77
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:32:9-34:68
 	android:label
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:40:13-65
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:34:13-65
 	android:name
-		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:39:13-40
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:33:13-40
+activity#com.words.chat.frmText
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:35:9-41:20
+	android:name
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:35:19-42
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:39:27-74
+activity#com.words.chat.ScrollingActivity
+ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:42:9-46:20
+	android:label
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:44:13-61
+	android:name
+		ADDED from /Users/uosim/AndroidStudioProjects/AndroidAudioRecrderChat/app/src/main/AndroidManifest.xml:43:13-46
